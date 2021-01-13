@@ -7,5 +7,9 @@ module "s3_bucket" {
   versioning = {
     enabled = true
   }
-
+tags = {
+    Name = "${var.prefix}-hashicat-instance"
+    department = "devops"
+    billable = "true"
+  }
 }
